@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Portfolio Hub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h2 class="logo">Student Portfolio</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#notes">Notes</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+
+    <h1>Hello, I'm <span>Eekshitha</span></h1>
+
+    <p>
+        B.Tech CSE Student | Frontend Web Developer
+    </p>
+
+    <button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+        Explore
+    </button>
+
+</section>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+
+I am a Computer Science Engineering student passionate about Web Development.
+I enjoy creating responsive websites using HTML, CSS and JavaScript.
+
+</p>
+
+</section>
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skills">
+
+<div class="box">HTML</div>
+
+<div class="box">CSS</div>
+
+<div class="box">JavaScript</div>
+
+<div class="box">Python</div>
+
+<div class="box">Java</div>
+
+<div class="box">SQL</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Task 1</h3>
+
+<p>Interactive Web Page</p>
+
+</div>
+
+<div class="card">
+
+<h3>Task 2</h3>
+
+<p>Contact Form & To-Do List</p>
+
+</div>
+
+<div class="card">
+
+<h3>Task 3</h3>
+
+<p>Quiz App & Joke API</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="notes">
+
+<h2>Notes App</h2>
+
+<input
+type="text"
+id="noteInput"
+placeholder="Write a Note">
+
+<button onclick="addNote()">
+
+Add Note
+
+</button>
+
+<div id="notesList"></div>
+
+</section>
+
+<section id="products">
+
+<h2>Product Listing</h2>
+
+<div class="filters">
+
+<select id="filter" onchange="displayProducts()">
+
+<option value="All">All</option>
+
+<option value="Electronics">Electronics</option>
+
+<option value="Accessories">Accessories</option>
+
+</select>
+
+<select id="sort" onchange="displayProducts()">
+
+<option value="default">Sort</option>
+
+<option value="low">Price Low-High</option>
+
+<option value="high">Price High-Low</option>
+
+</select>
+
+</div>
+
+<div id="productList"></div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<input
+type="text"
+id="name"
+placeholder="Enter Name">
+
+<input
+type="email"
+id="email"
+placeholder="Enter Email">
+
+<textarea
+id="message"
+placeholder="Enter Message"></textarea>
+
+<button onclick="submitForm()">
+
+Submit
+
+</button>
+
+<p id="output"></p>
+
+</section>
+
+<footer>
+
+<h3>
+© 2026 Student Portfolio Hub
+</h3>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
